@@ -1,54 +1,237 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-*
-{
-	margin:0;
-	padding: 0;
-}
-body {
-	background-image:url('ms.jpg');
-	font-family:serif;
-}
-.contact-box {
-    background-color:rgba(250,100,20,0.1);
-	width:500px;
-	opacity: 1;
-	margin: auto;
-	border: 5px double black;
-	padding: 50px; 
-}
-.input-area {
-	width:300px;
-	height:40px;
-	margin-top:20px;
-	padding-left:10px;
-	padding-right:10px;
-	border-style: outset;
-	border:3px solid black;
-	border-radius:20px;
-	outline=none;
-}
-.buttom {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-textarea
-{
-	resize=horizontal;
-	max-width=200px;
-    padding: 10px;
-    background-color:white;
-    font-size:12px;
-}
-</style>
-</head>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" media="screen" href="style.css">
+
+    <title>Welcome to the site</title>
+  </head>
+  <body>
+      <div class="header-background">
+          <div id="nav" class="sticky-nav">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#" ><img src="blackrosedragon.png" alt="codexa" width="30" height="24"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#webservice" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        web services
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#webservice">Web Designing</a></li>
+                        <li><a class="dropdown-item" href="#webservice">Digital Marketing</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Technical blogging</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">My skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                    
+                    </ul>
+                    <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+            
+                    </form>
+                </div>
+                </div>
+            </nav>
+
+
+
+
+          </div>
+          <div id="particles-js">
+            <h1 class="heading animate__animated animate__rotateInDownLeft animate__delay-5ms animate__slower">Hello! Peeps I'm OM SARANGI<br>I'm a web developer</h1>
+            <!--h1 class="heading">I'm a web developer</h1-->
+          </div>
+          
+      </div>
+      <div class="container-fluid" id="aboutme">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6 col-lg-6 column-left img-fluid">
+                  <!--img src="yy.jpg",class="background-image" height="920px" width="935px"-->
+
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-6 column-right">
+                  <h1 class="section-title">About Me</h1>
+                  <p class="paragraph">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    <br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    <br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                    <br>and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="container-fluid" id="webservice">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6 col-lg-6">
+                  <h1 class="service-section">what we do best</h1>
+                  <p class="paragraph">
+                    There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration in some form, 
+                    by injected humour, or randomised words which don't look even slightly believable. 
+                    If you are going to use a passage of Lorem Ipsum, 
+                    you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+                    All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+                  </p>
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-6 col-lg-6 service-1">
+                          <i class="fa fa-magic" aria-hidden="true"></i>
+                          <h1 class="service-title-1">Web Design</h1>
+                          <p class="service-paragraph-1">
+                            If you are going to use a passage of Lorem Ipsum, 
+                            you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+                            All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, 
+                            making this the first true generator on the Internet.
+                          </p>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-lg-6 service-2">
+                        <i class="fa fa-handshake"></i>
+                        <h1 class="service-title-2">Digital Marketing</h1>
+                        <p class="service-paragraph-2">
+                          If you are going to use a passage of Lorem Ipsum, 
+                          you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+                          All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, 
+                          making this the first true generator on the Internet. 
+                        </p>  
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-6 our-service-right"
+          </div>
+      </div>
+      <div class="container-fluid inner np" id="skills">
+          <div class="header">
+              <h1>My skills</h1>
+          </div>
+          <div class="container">
+              <div class="skill-box">
+                  <div class="skill-title">
+                      <div class="img">
+                          <img src="xx.png" class="skill-icon">
+                      </div>
+                      <h3>HTML 5</h3>
+                  </div>
+                  <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                      It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  </P>
+              </div>
+              <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="ok.png" class="skill-icon">
+                    </div>
+                    <h3>CSS 3</h3>
+                </div>
+                <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </P>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="ff.png" class="skill-icon">
+                    </div>
+                    <h3>JAVASCRIPT</h3>
+                </div>
+                <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </P>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="pp.png" class="skill-icon">
+                    </div>
+                    <h3>PYTHON</h3>
+                </div>
+                <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </P>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="sss.png" class="skill-icon">
+                    </div>
+                    <h3>SASS</h3>
+                </div>
+                <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </P>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="qqq.png" class="skill-icon">
+                    </div>
+                    <h3>MY SQL</h3>
+                </div>
+                <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </P>
+            </div>
+          </div>
+      </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://kit.fontawesome.com/6a70560494.js" crossorigin="anonymous"></script>
+        <script src = "particles.js-master/particles.js"></script>
+        <script src="app.js"></script>
+        <script src="packet.json"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        -->
+    </body>
 </html>
