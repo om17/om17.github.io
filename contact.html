@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" media="screen" href="stylef.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <title>contact form</title>
+  </head>
+  <body>
+    <div class="header-background">
+        <div id="nav" class="sticky-nav">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+              <div class="container-fluid">
+              <a class="navbar-brand" href="#" ><img src="blackrosedragon.png" alt="codexa" width="30" height="24"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <span></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About Me</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      web services
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Web Designing</a></li>
+                      <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Technical blogging</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Project</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Team</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  
+                  </ul>
+                  <form class="d-flex">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+          
+                  </form>
+              </div>
+              </div>
+          </nav>
+          <header class="page-header gradient">
+              <div class="container pt-3">
+                  <div class="row align-items-center justify-content-center">
+                      <div class="col-md-6">
+                          <h2>contact form</h2>
+                          <p>call or email us regarding questions or issues</p>
+                          <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">first_name</label>
+                              <input type="text" name="fname" class="form-control" id="Firstname">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">last_name</label>
+                              <input type="text" name="lname" class="form-control" id="Lastname">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-6">
+                              <label for="inputAddress2" class="form-label">E-mail ID </label>
+                              <input type="text" class="form-control" id="email" placeholder="xyz@abc.com">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">phone number</label>
+                              <input type="text" class="form-control" id="phnumber">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">State</label>
+                              <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>odisha</option>
+                                <option>assam</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label">Zip</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                          </form>
+                      </div>
+                      <div class="col-md-6 ">
+                          <img src="fg.png" alt="header image" width="400px" height="500px"/>
+                      </div>
+                  </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L48,282.7C96,277,192,267,288,234.7C384,203,480,149,576,138.7C672,128,768,160,864,176C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+          </header>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/6a70560494.js" crossorigin="anonymous"></script>
+    <script src = "particles.js-master/particles.js"></script>
+    <script src="app.js"></script>
+    <script src="packet.json"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
